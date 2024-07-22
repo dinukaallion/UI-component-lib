@@ -1,11 +1,26 @@
-import './App.css';
-import ComponentTypography from './components/atom/typography/ComponentTypography';
+import { Button, CssBaseline, Radio, ThemeProvider, Typography } from "@mui/material";
+import "./App.css";
+import theme from "./theme/theme";
 
 function App() {
   return (
-    <div className="App">
-      <ComponentTypography  content='Hello world'  type='h1'/>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className="App">
+        <Button variant="contained" color="secondary">
+          Contained
+        </Button>
+        <Button variant="outlined" color="primary">
+          Outlined
+        </Button>
+        <Button variant="text" color="warning">
+          Text
+        </Button>
+        <Radio color="primary"/>
+        <Radio color="secondary"/>
+        <Typography variant="button">Content for button</Typography>
+      </div>
+    </ThemeProvider>
   );
 }
 
