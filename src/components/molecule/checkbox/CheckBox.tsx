@@ -1,7 +1,7 @@
 // Checkbox.stories.tsx
 
 import React from 'react';
-import { Meta, StoryFn } from '@storybook/react';
+
 import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
